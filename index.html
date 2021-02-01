@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="Описание страницы" />
+    <meta name="keywords" content="Приватна школа для учнів 1-11 класів з ліцензією МОН, документи державного зразка Біла Церква, б-р Олександрійський, 36, кв. 3 +380682187968" />
+    <meta name="google" content="notranslate" />
+    <title>Home School – альтернативна загальноосвітня школа м. Біла Церква</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASuLwFYypC6X1e0Q2saY0ewe_Kib0RKsE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+</head>
+<body>
+
+<!-- Sprite -->
+<svg style="display: none;">
+
+    <symbol id="facebook" viewBox="0 0 430.113 430.114">
+        <g>
+            <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+        </g>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 511 511.9">
+        <g>
+            <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+        </g>
+    </symbol>
+
+    <symbol id="telephone" viewBox="0 0 58 58">
+        <g>
+            <path d="m25.017 33.983c-5.536-5.536-6.786-11.072-7.068-13.29-.0787994-.6132828.1322481-1.2283144.571-1.664l4.48-4.478c.6590136-.6586066.7759629-1.685024.282-2.475l-7.133-11.076c-.5464837-.87475134-1.6685624-1.19045777-2.591-.729l-11.451 5.393c-.74594117.367308-1.18469338 1.15985405-1.1 1.987.6 5.7 3.085 19.712 16.855 33.483s27.78 16.255 33.483 16.855c.827146.0846934 1.619692-.3540588 1.987-1.1l5.393-11.451c.4597307-.9204474.146114-2.0395184-.725-2.587l-11.076-7.131c-.7895259-.4944789-1.8158967-.3783642-2.475.28l-4.478 4.48c-.4356856.4387519-1.0507172.6497994-1.664.571-2.218-.282-7.754-1.532-13.29-7.068z"/><path  d="m47 31c-1.1045695 0-2-.8954305-2-2-.0093685-8.2803876-6.7196124-14.9906315-15-15-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2c10.4886126.0115735 18.9884265 8.5113874 19 19 0 1.1045695-.8954305 2-2 2z"/><path  d="m57 31c-1.1045695 0-2-.8954305-2-2-.0154309-13.800722-11.199278-24.9845691-25-25-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2c16.008947.01763587 28.9823641 12.991053 29 29 0 .530433-.2107137 1.0391408-.5857864 1.4142136-.3750728.3750727-.8837806.5857864-1.4142136.5857864z"/>
+        </g>
+    </symbol>
+
+</svg>
+
+<!-- Header -->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="img/+home_school_logo_189х24_white.png" alt="">
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#features">Послуги</a>
+                <a class="nav__link" href="#" data-scroll="#works">Галерея</a>
+                <a class="nav__link" href="#" data-scroll="#team">Викладачі</a>
+                <a class="nav__link" href="#" data-scroll="#reviews">Про нас</a>
+                <a class="nav__link" href="#" data-scroll="#map">Контакти</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <span class="burger__item">Menu</span>
+            </button>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- Intro -->
+<div class="intro" id="intro">
+    <div class="container">
+       
+        <div class="intro__inner">
+            <h1 class="intro__title"><img src="img/+home_school_1900х750_logo.png""></h1>
+            <h2 class="intro__subtitle">школа, до якої хочеться ходити</h2>
+            <a class="btn  btn--green" href="#" data-scroll="#reviews">Дізнатися більше</a>
+        </div>
+   
+    </div>
+</div>
+
+
+<!-- Features -->
+<div class="container" id="features">
+    <div class="features">
+        <div class="features__item">
+            <img class="features__icon" src="img/features/feature-2.png" alt="">
+            <!--<h4 class="features__title">Форма навчання</h4>-->
+            <div class="features__text">Дистанційна загальноосвітня школа<br> з освітньою ліцензією <br>(форма навчання: екстернат)</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/feature-5.png" alt="">
+            <!--<h4 class="features__title"></h4>-->
+            <div class="features__text">Навчання за програмою МОН  для учнів 1–11 класів<br>та надання офіційних документів<br>про освіту державного зразка</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/feature-1.png" alt="">
+            <!--<h4 class="features__title">Modern Design</h4>-->
+            <div class="features__text3"> • поглиблене вивчення англійської мови<br>
+                • основи бізнес-грамотності<br> 
+                • IT-курси</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/feature-3.png" alt="">
+            <!--<h4 class="features__title">Clean Code</h4>-->
+            <div class="features__text4">Додатково:<br>  
+                • репетиторські послуги<br>
+                • підготовка до ЗНО</div>
+        </div>
+<!--
+        <div class="features__item">
+            <img class="features__icon" src="img/features/feature-5.png" alt="">
+            <h4 class="features__title">Ready to Ship</h4>
+            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/feature-6.png" alt="">
+            <h4 class="features__title">Download for Free</h4>
+            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+        </div>
+-->
+    </div><!-- /.features -->
+</div><!-- /.container -->
+
+
+
+<!-- Works -->
+<div class="works" id="works">
+    <div class="works__item">
+        <img class="works__photo" src="img/works/w1.png" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+    </div>
+
+    <div class="works__item">
+        <img class="works__photo" src="img/works/w2.png" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+    </div>
+
+    <div class="works__item">
+        <img class="works__photo" src="img/works/w3.png" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+    </div>
+
+    <div class="works__item">
+        <img class="works__photo" src="img/works/w4.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+    </div>
+
+    <div class="works__item">
+        <img class="works__photo" src="img/works/w5.png" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+    </div>
+
+    <div class="works__item">
+        <img class="works__photo" src="img/works/w6.png" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+    </div>
+
+    <div class="works__item">
+        <img class="works__photo" src="img/works/w7.png" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+    </div>
+
+    <div class="works__item">
+        <img class="works__photo" src="img/works/w8.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+    </div>
+</div><!-- /.works -->
+
+
+
+<!-- Team
+<div class="team" id="team">
+    <div class="container">
+        <div class="team__inner">
+
+            <div class="team__item">
+                <img class="team__photo" src="img/team/team-1.jpg" alt="">
+                <div class="team__name">Ruth Woods</div>
+                <div class="team__prof">Founder, CEO</div>
+                <div class="team__text">
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                </div>
+
+                <div class="social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telephone"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img class="team__photo" src="img/team/team-2.jpg" alt="">
+                <div class="team__name">Timothy Reed</div>
+                <div class="team__prof">Co-Founder, Developer</div>
+                <div class="team__text">
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                </div>
+                <div class="social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telephone"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img class="team__photo" src="img/team/team-3.jpg" alt="">
+                <div class="team__name">Victoria Valdez</div>
+                <div class="team__prof">UI Designer</div>
+                <div class="team__text">
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                </div>
+                <div class="social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telephone"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img class="team__photo" src="img/team/team-4.jpg" alt="">
+                <div class="team__name">Beverly Little</div>
+                <div class="team__prof">Data Scientist</div>
+                <div class="team__text">
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                </div>
+                <div class="social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="viber://chat?number=380662034791" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telephone"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div><!-- /.team__inner -->
+    </div><!-- /.container -->
+</div><!-- /.team -->
+
+
+
+<!-- Testimonials -->
+<div class="reviews" id="reviews">
+    <div class="container">
+
+        <div class="reviews__slider" id="reviewsSlider">
+            <div class="slick-item">
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="img/reviews/пропонуємо.png" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">Ми пропонуємо:<br>
+                        - навчання у домашній теплій атмосфері<br>
+                        - онлайн-доступ до навчальних матеріалів 24/7<br>
+                        - поглиблене вивчення англійської мови<br>
+                        - ІТ-курси<br>
+                        - основи бізнес-грамотності<br>
+                        - заняття з пілатесу, спортивний куточок<br>
+                        - прогулянки на свіжому повітрі (у нас закрита територія із   власним ігровим майданчиком)<br>
+                        - забезпечення повноцінним харчуванням (комплексні обіди)</div>
+                        <div class="reviews__author"> Ми звільнимо вас від необхідності вчити уроки з дитиною.
+                        Наша школа — це сімейний затишок, піклування і любов, навички спілкування та безліч друзів, веселе і яскраве дозвілля. </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="img/reviews/навчпрос.png" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">У першій половині дня (академічний блок) діти засвоюють знання під час онлайн-уроків, які проводяться у форматі відеозапису. Школярі перебувають біля моніторів оптимальний проміжок часу з перервами на фізичну активність.</div>
+                    <div class="reviews__text">
+                        Друга половина дня присвячена всебічному розвитку дитини та розкриттю її талантів. 
+                        Школярі,  засвоюють основи бізнес-грамотності, займаються на ІТ-курсах, поглиблено вивчають іноземні мови, підвищують свій рівень знань на індивідуальних уроках з репетитором, займаються творчою діяльністю. А для гармонійного фізичного розвитку і міцного здоров’я щодня відвідують заняття з пілатесу, здійснюють прогулянки на свіжому повітрі, проводять час у спілкуванні з однолітками та активних іграх. 
+                        Протягом дня діти перебувають під дбайливим наглядом куратора. Він забезпечує індивідуальний підхід до кожної дитини та комбінує різні форми їхньої діяльності.</div>
+
+                        <div class="reviews__author"></div>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="slick-item">
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="img/reviews/оплата.png" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">Базовий пакет включає:<br>
+                        • доступ до особистого кабінету з навчальним матеріалом (записи онлайн-уроків, автоматична перевірка практики і тестувань) <br>
+                        • оцінювання онлайн раз на чверть/раз на семестр (батьки слідкують за прогресом та активністю дитини в особистому кабінеті учня)<br>
+                        • підготовка до ДПА та прийом екзаменів<br>
+                        • видача свідоцтва про здобуття освіти державного зразка<br>
+                        • заняття з бізнес-грамотності<br>
+                        • ігрова та спортивна діяльність (щоденні заняття з пілатесу)<br>
+                        • живе спілкування з однолітками
+                        Навчальний день триває з 9:00 до 16:00.</div>
+                    <div class="reviews__text">
+                        Вартість базового пакету: 5000 грн / місяць
+                       </div>
+
+                        <div class="reviews__author"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+</div><!-- /.reviews -->
+
+
+
+<!-- Download -->
+<div  id="map">
+    
+
+      <!-- 
+      <div class="container"> 
+      <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
+        <div class="download__text">
+            <p>Fusce dapibus, tellus ac cursus commodo</p>
+        </div>
+        <a class="btn  btn--red  btn--long" href="#">Download Here</a>
+           </div>
+    -->
+ 
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__block">
+                <h4 class="footer__title">Наша адреса:</h4>
+                <address class="footer__address">
+                    <a href="https://www.google.com.ua/maps/place/бульвар+50-річчя+Перемоги,+36,+Біла+Церква,+Київська+обл.,+09100/@49.8051542,30.1063056,18z/data=!4m5!3m4!1s0x40d3423add227cf5:0xbaf46cabbfb548e0!8m2!3d49.8052011!4d30.1062305?hl=ru" target="_blank">
+                    <div>м.Біла Церква</div>
+                    <div>б-р Олександрійський, 36, кв.3</div>
+                    </a>
+                </address>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__title">Cоціальні мережі:</h4>
+                <div class="social  social--footer">
+                    <a class="social__item" href="https://www.facebook.com/BC.HomeSchool" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="https://www.instagram.com/bc.homeschool/" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="viber://add?number=380682187968" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telephone"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__title">Контакти:</h4>
+                <div class="footer__text">
+                    <a class="footer_telephone" href="tel:+380682187968">+38(068) 218-79-68</a>
+                </div>
+            </div>
+        </div><!-- /.footer__inner -->
+
+    </div><!-- /.container -->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__text">
+                <div>© 2021 Home School.</div>
+                <div>Web Developer <a href="mailto:glebrockshok@gmail.com"><span>Gleb Zadorozhnyi</span></a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
+<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 49.8051673, lng: 30.1062074 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 17.33,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+
+
+</body>
+</html>
